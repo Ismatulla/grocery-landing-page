@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+    <title>Grocery</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <ion-icon name="basket-outline" class="grocery-icon"></ion-icon>
+            Groco
+        </a>
+        <nav class="menu-list">
+            <ul class="lists">
+                <li>
+                    <a class="list-item" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="list-item" href="#features">Features</a>
+                </li>
+                <li>
+                    <a class="list-item" href="#products">Products</a>
+                </li>
+                <li>
+                    <a class="list-item" href="#categories">Categories</a>
+                </li>
+                <li>
+                    <a class="list-item" href="#review">Review</a>
+                </li>
+                <li>
+                    <a class="list-item" href="#blogs">Blogs</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <ion-icon class="grocery-icon search-icon" name="search-outline"></ion-icon>
+            <ion-icon class="grocery-icon" name="cart-outline"></ion-icon>
+            <ion-icon class="grocery-icon" name="person"></ion-icon>
+        </div>
+        <button class="mobile__nav--button">
+        <ion-icon name="menu-outline" class="menu-outline"></ion-icon>
+        <ion-icon name="close-outline" class="close-outline"></ion-icon>
+      </button>
+        <!-- search form  -->
+        <form action="#" class="search-form">
+            <label for="search-input"><ion-icon name="search-outline"></ion-icon
+        ></label>
+            <input type="text" class="search" id="search-input" placeholder="search here..." />
+        </form>
+        <!-- Cart -->
+
+        <div class="added-products">
+            <li class="product">
+                <img src="image/cat-1.png" alt="" />
+                <div class="product-name">
+                    <h3>Watermelon</h3>
+                    <span>$4.99/- Qty:1</span>
+                </div>
+                <ion-icon name="trash-bin"></ion-icon>
+            </li>
+            <li class="product">
+                <img src="image/cat-2.png" alt="" />
+                <div class="product-name">
+                    <h3>Watermelon</h3>
+                    <span>$4.99/- Qty:1</span>
+                </div>
+                <ion-icon name="trash-bin"></ion-icon>
+            </li>
+            <li class="product">
+                <img src="image/cat-3.png" alt="" />
+                <div class="product-name">
+                    <h3>Watermelon</h3>
+                    <span>$4.99/- Qty:1</span>
+                </div>
+                <ion-icon name="trash-bin"></ion-icon>
+            </li>
+            <button class="card-btn"><a href="#">Checkout</a></button>
+        </div>
+        <!-- login form -->
+        <div class="login-form">
+            <h2 class="header-secondary">Login now</h2>
+            <input type="email" placeholder="your email" />
+            <input type="password" placeholder="your password" />
+
+            <span class="password">Forget your password <a href="#">Click Here</a></span
+        >
+        <span class="account"
+          >Don't Have An Account <a href="#">Create Now</a>
+        </span>
+
+            <button class="card-btn"><a href="#">Login Now</a></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1 class="hero">Fresh and <span>Organic</span> Products for You</h1>
+            <p class="hero-text">
+                Buy groceries,and feed yourself even on the road
+            </p>
+            <button class="shop-now">
+          <a href="#" class="shop-button">Shop Now</a>
+        </button>
+        </section>
+        <div class="container">
+            <!-- Feature section  -->
+            <section class="features-section card-of-items" id="features">
+                <h2 class="header-secondary features-header">
+                    Our <span>Features</span>
+                </h2>
+                <div class="feature-cards grid-3-col">
+                    <!-- card-1 -->
+                    <div class="card card-1">
+                        <img src="image/feature-img-1.png" alt="" />
+                        <h3 class="card-title">Fresh and Organic</h3>
+                        <p class="card-content">
+                            Whoever says money does not buy happiness did not know where to shop
+                        </p>
+                        <button class="card-btn"><a href="#">Read More</a></button>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="card card-2">
+                        <img src="image/feature-img-2.png" alt="" />
+                        <h3 class="card-title">Free Delivery</h3>
+                        <p class="card-content">
+                            The best relationships are when you both want to make each other happy - you buy the groceries, I do the dishes
+                        </p>
+                        <button class="card-btn"><a href="#">Read More</a></button>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="card card-3">
+                        <img src="image/feature-img-3.png" alt="" />
+                        <h3 class="card-title">Easy Payments</h3>
+                        <p class="card-content">
+                            Buy stocks like you buy your groceries, not like you buy your perfume
+                        </p>
+                        <button class="card-btn"><a href="#">Read More</a></button>
+                    </div>
+                </div>
+            </section>
+            <!--  -->
+            <!-- Products section  -->
+            <section class="products-section card-of-items" id="products">
+                <h2 class="header-secondary features-header">
+                    Our <span>Products</span>
+                </h2>
+                <div class="feature-cards grid-3-col">
+                    <!-- card-1 -->
+                    <div class="card card-1">
+                        <img src="image/product-1.png" alt="" class="product-img" />
+                        <h3 class="card-title">Fresh Orange</h3>
+                        <span class="price-range">$4,99/--10.99/-</span>
+                        <span class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half-outline"></ion-icon
+              ></span>
+                        <button class="card-btn"><a href="#">Read More</a></button>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="card card-2">
+                        <img class="product-img" src="image/product-2.png" alt="" />
+                        <h3 class="card-title">Fresh Onion</h3>
+                        <span class="price-range">$4,99/--10.99/-</span>
+                        <span class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half-outline"></ion-icon
+              ></span>
+                        <button class="card-btn"><a href="#">Read More</a></button>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="card card-3">
+                        <img class="product-img" src="image/product-3.png" alt="" />
+                        <h3 class="card-title">Fresh Meat</h3>
+                        <span class="price-range">$4,99/--10.99/-</span>
+                        <span class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half-outline"></ion-icon
+              ></span>
+                        <button class="card-btn"><a href="#">Read More</a></button>
+                    </div>
+                    <!-- card-4 -->
+                    <div class="card card-4">
+                        <img class="product-img" src="image/product-4.png" alt="" />
+                        <h3 class="card-title">Fresh Cabbage</h3>
+                        <span class="price-range">$4,99/--10.99/-</span>
+                        <span class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half-outline"></ion-icon
+              ></span>
+                        <button class="card-btn"><a href="#">Read More</a></button>
+                    </div>
+                    <!-- card-5 -->
+                    <div class="card card-5">
+                        <img class="product-img" src="image/product-5.png" alt="" />
+                        <h3 class="card-title">Fresh Potato</h3>
+                        <span class="price-range">$4,99/--10.99/-</span>
+                        <span class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half-outline"></ion-icon
+              ></span>
+                        <button class="card-btn"><a href="#">Read More</a></button>
+                    </div>
+                    <!-- card-6 -->
+                    <div class="card card-6">
+                        <img class="product-img" src="image/product-6.png" alt="" />
+                        <h3 class="card-title">Fresh Avocado</h3>
+                        <span class="price-range">$4,99/--10.99/-</span>
+                        <span class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half-outline"></ion-icon
+              ></span>
+                        <button class="card-btn"><a href="#">Read More</a></button>
+                    </div>
+                </div>
+            </section>
+            <!-- Review Section -->
+            <section class="Review-section card-of-items" id="review">
+                <h2 class="header-secondary features-header">
+                    Customer's <span>Review</span>
+                </h2>
+                <div class="feature-cards grid-3-col">
+                    <!-- card-1 -->
+                    <figure class="card card-1">
+                        <img class="reviewer" src="image/pic-1.png" alt="" />
+
+                        <figcaption class="card-content">
+                            Whoever says money does not buy happiness did not know where to shop
+                        </figcaption>
+                        <h3 class="card-title">John Doe</h3>
+                        <span class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half-outline"></ion-icon
+              ></span>
+                    </figure>
+                    <!-- card-2 -->
+                    <figure class="card card-2">
+                        <img src="image/pic-2.png" alt="" class="reviewer" />
+
+                        <figcaption class="card-content">
+                            The best relationships are when you both want to make each other happy
+                        </figcaption>
+                        <h3 class="card-title">John Doe</h3>
+                        <span class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half-outline"></ion-icon
+              ></span>
+                    </figure>
+                    <!-- card-3 -->
+                    <figure class="card card-3">
+                        <img src="image/pic-3.png" alt="" class="reviewer" />
+                        <figcaption class="card-content">
+                            Buy stocks like you buy your groceries,<br /> not like you buy your perfume
+                        </figcaption>
+                        <h3 class="card-title">John Doe</h3>
+                        <span class="star-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-half-outline"></ion-icon
+              ></span>
+                    </figure>
+                </div>
+            </section>
+            <!-- Our blogs section -->
+            <section class="blogs-section card-of-items" id="blogs">
+                <h2 class="header-secondary features-header">
+                    Our <span>Blogs</span>
+                </h2>
+                <div class="blog-grids grid-3-col">
+                    <!-- card-1 -->
+                    <div class="blogs-card">
+                        <img src="image/blog-1.jpg" alt="" />
+                        <div class="blog-content">
+                            <span class="blog-icons">
+                  <span class="icon-user">
+                    <ion-icon name="person"></ion-icon><span>By User</span>
+                            </span>
+                            <span class="icon-user">
+                    <ion-icon name="calendar-clear"></ion-icon
+                    ><span>1st May,2021</span></span>
+                            </span>
+                            <h2 class="card-title">
+                                Fresh and Organic Vegetables And Fruits
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sit nulla commodi
+                            </p>
+                            <button class="card-btn"><a href="#">Read More</a></button>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="blogs-card">
+                        <img src="image/blog-2.jpg" alt="" />
+                        <div class="blog-content">
+                            <span class="blog-icons">
+                  <span class="icon-user">
+                    <ion-icon name="person"></ion-icon><span>By User</span>
+                            </span>
+                            <span class="icon-user">
+                    <ion-icon name="calendar-clear"></ion-icon
+                    ><span>1st May,2021</span></span>
+                            </span>
+                            <h2 class="card-title">
+                                Fresh and Organic Vegetables And Fruits
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sit nulla commodi
+                            </p>
+                            <button class="card-btn"><a href="#">Read More</a></button>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="blogs-card">
+                        <img src="image/blog-3.jpg" alt="" />
+                        <div class="blog-content">
+                            <span class="blog-icons">
+                  <span class="icon-user">
+                    <ion-icon name="person"></ion-icon><span>By User</span>
+                            </span>
+                            <span class="icon-user">
+                    <ion-icon name="calendar-clear"></ion-icon
+                    ><span>1st May,2021</span></span>
+                            </span>
+                            <h2 class="card-title">
+                                Fresh and Organic Vegetables And Fruits
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sit nulla commodi
+                            </p>
+                            <button class="card-btn"><a href="#">Read More</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- footer section  -->
+        <footer class="section-footer">
+            <div class="address">
+                <span class="header-logo">
+            <h2 class="header-secondary">Groco</h2>
+            <ion-icon class="basket-icon" name="basket"></ion-icon
+          ></span>
+                <address>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Dignissimos architecto ratione
+            </p>
+          </address>
+                <div class="social-links">
+                    <a href="#" class="share">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#" class="share">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="" class="share">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+
+                    <a href="" class="share">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-info nav-lists">
+                <h2 class="heading-secondary">Contact info</h2>
+                <span><ion-icon name="call"></ion-icon>
+            <a href="tel+123-456-789" class="share">123-456-789</a>
+          </span>
+                <span>
+            <ion-icon name="call"></ion-icon>
+            <a href="tel+111-222-333" class="share">111-222-333</a>
+          </span>
+                <span>
+            <ion-icon name="mail"></ion-icon>
+            <a href="mailto:ismatilloqyliyev@gmail.com" class="share"
+              >hello@gamil.com</a
+            >
+          </span>
+                <span><ion-icon name="location"></ion-icon>
+            <a href="#" class="share">Miskolc,Hungary - 3515</a></span
+          >
+        </div>
+        <div class="quick-links nav-lists">
+          <h2 class="heading-secondary">Quick Links</h2>
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon name="arrow-forward"></ion-icon><a href="#">Home</a>
+            </li>
+            <li class="list-item">
+              <ion-icon name="arrow-forward"></ion-icon><a href="#">Features</a>
+            </li>
+            <li class="list-item">
+              <ion-icon name="arrow-forward"></ion-icon><a href="#">Products</a>
+            </li>
+            <li class="list-item">
+              <ion-icon name="arrow-forward"></ion-icon
+              ><a href="#">Categories</a>
+            </li>
+            <li class="list-item">
+              <ion-icon name="arrow-forward"></ion-icon><a href="#">Review</a>
+            </li>
+            <li class="list-item">
+              <ion-icon name="arrow-forward"></ion-icon><a href="#">Blogs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="newsletter nav-lists">
+          <h2 class="heading-secondary">Subscribe for updates</h2>
+          <form action="#" class="submit-form">
+            <label for="email">your email address:</label>
+            <input type="email" id="email" placeholder="your email" required />
+            <button class="btn-footer">
+              <a href="#">Subscribe</a>
+            </button>
+          </form>
+        </div>
+      </footer>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
